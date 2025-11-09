@@ -1,11 +1,11 @@
-import png1 from "../assets/images/1.png";
-import png2 from "../assets/images/2.png";
-import png3 from "../assets/images/3.png";
-import png4 from "../assets/images/4.png";
-import png5 from "../assets/images/5.png";
-import png6 from "../assets/images/6.png";
-import png7 from "../assets/images/7.png";
-import png8 from "../assets/images/8.png";
-import png9 from "../assets/images/9.png";
+import webp1 from "../assets/images/1.webp";
+import webp2 from "../assets/images/2.webp";
+import webp3 from "../assets/images/3.webp";
+import webp4 from "../assets/images/4.webp";
+import webp5 from "../assets/images/5.webp";
+import webp6 from "../assets/images/6.webp";
+import webp7 from "../assets/images/7.webp";
+import webp8 from "../assets/images/8.webp";
+import webp9 from "../assets/images/9.webp";
 
-export { png1, png2, png3, png4, png5, png6, png7, png8, png9 };
+export { webp1, webp2, webp3, webp4, webp5, webp6, webp7, webp8, webp9 };
