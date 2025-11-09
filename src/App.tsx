@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { content } from "./data/content";
 
 function App() {
-  const [visibleImages, setVisibleImages] = useState<number[]>([]);
+  const [visibleImages, setVisibleImages] = useState<number[]>([0, 1, 2]); // Force first 3 images to show
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
