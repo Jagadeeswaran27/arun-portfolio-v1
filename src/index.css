@@ -1,8 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "tailwindcss";
 
 .root {
   display: flex;
@@ -17,8 +13,50 @@ img {
   width: 85%;
 }
 
+.contact-icon {
+  animation: wiggle 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.contact-icon:hover {
+  transform: scale(1.1);
+  animation-play-state: paused;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
 @media (max-width: 768px) {
   img {
     width: 100%;
   }
+}
+
+.test:hover {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(8%) saturate(0%)
+    hue-rotate(158deg) brightness(96%) contrast(86%);
+  transition: filter 0.3s ease;
 }
