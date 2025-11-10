@@ -60,3 +60,7 @@ img {
     hue-rotate(158deg) brightness(96%) contrast(86%);
   transition: filter 0.3s ease;
 }
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}

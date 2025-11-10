@@ -36,10 +36,10 @@ const SocialIcon = (props: SocialIconProps) => {
   return (
     <img
       src={hoveredIcon === iconType ? hoverIcon : defaultIcon}
-      style={{ width: "30px", height: "30px" }}
+      style={{ width: "34px", height: "34px" }}
       onMouseEnter={() => setHoveredIcon(iconType)}
       onMouseLeave={() => setHoveredIcon(null)}
-      className={`absolute left-[13px] ${
+      className={`absolute left-2.5 ${
         isSocialOpened ? "block" : "hidden group-hover:block"
       } ${className} hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer`}
       alt={`${iconType} icon`}

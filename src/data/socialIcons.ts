@@ -21,7 +21,7 @@ export const socialIcons = [
     type: "mail" as SocialIconType,
     default: mail,
     hover: mailHover,
-    position: "bottom-[200px]",
+    position: "bottom-[195px]",
   },
   {
     type: "behance" as SocialIconType,
