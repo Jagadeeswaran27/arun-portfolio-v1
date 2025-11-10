@@ -25,7 +25,13 @@ const SocialIcon = (props: SocialIconProps) => {
     if (iconType === "whatsapp") {
       window.open("https://wa.me/8296570333", "_blank");
     } else if (iconType === "mail") {
-      window.location.href = "mailto:arun.n163@gmail.com";
+      // Direct Gmail web interface
+      const subject = "";
+      const body = "";
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=arun.n163@gmail.com&su=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(body)}`;
+      window.open(gmailUrl, "_blank");
     } else if (iconType === "behance") {
       window.open("https://www.behance.net/arunn15", "_blank");
     } else if (iconType === "linkedin") {

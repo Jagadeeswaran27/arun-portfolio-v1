@@ -64,7 +64,7 @@ function App() {
           loading={index < 3 ? "eager" : "lazy"}
           decoding="async"
           fetchPriority={index < 3 ? "high" : "low"}
-          className={`hover:scale-[103%] transition-all duration-300 ease-in-out shadow-[0px_2px_8px_rgba(0,0,0,0.2)]`}
+          className={`hover:scale-[103%] transition-all duration-300 ease-in-out shadow-[0px_2px_8px_rgba(0,0,0,0.2)] hover:rounded-[6px]`}
         />
       ))}
       <div
