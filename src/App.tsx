@@ -77,7 +77,7 @@ function App() {
             : isSmallDevice
             ? "bottom-[170px]"
             : "bottom-[200px]"
-        } right-6 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out cursor-pointer hover:scale-105`}
+        } right-[3%] rounded-full flex items-center justify-center transition-all duration-300 ease-in-out cursor-pointer hover:scale-105`}
         style={{
           background: "#cccccc",
           boxShadow: "0px 0px 7px 1px #F7F7F740",
@@ -97,7 +97,7 @@ function App() {
         onMouseLeave={() => setIsHovered(false)}
         onMouseEnter={() => setIsHovered(true)}
         onClick={isSmallDevice ? () => setIsSocialOpened(true) : undefined}
-        className={`social-container group w-14 h-14 fixed bottom-[100px] right-6 rounded-full flex items-end cursor-pointer hover:scale-105 hover:h-[350px] ${
+        className={`social-container group w-14 h-14 fixed bottom-[100px] right-[3%] rounded-full flex items-end cursor-pointer hover:scale-105 hover:h-[350px] ${
           isSocialOpened ? "h-[350px]" : ""
         } transition-all duration-500 ease-in-out origin-bottom`}
         style={{

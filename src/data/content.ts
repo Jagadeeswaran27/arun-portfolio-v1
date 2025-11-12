@@ -1,6 +1,7 @@
 import {
   webp1,
   webp2,
+  webp3,
   webp4,
   webp5,
   webp6,
@@ -20,11 +21,19 @@ import {
   webp22,
   webp23,
   webp24,
+  webp25,
+  webp26,
+  webp27,
+  webp28,
+  webp29,
+  webp30,
+  webp31,
 } from "../resources/images";
 
 export const content = [
   webp1,
   webp2,
+  webp3,
   webp4,
   webp5,
   webp6,
@@ -44,4 +53,11 @@ export const content = [
   webp22,
   webp23,
   webp24,
+  webp25,
+  webp26,
+  webp27,
+  webp28,
+  webp29,
+  webp30,
+  webp31,
 ];
