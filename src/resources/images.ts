@@ -10,6 +10,7 @@ import webp9 from "../assets/images/9.webp";
 import webp10 from "../assets/images/10.webp";
 import webp11 from "../assets/images/11.webp";
 import webp12 from "../assets/images/12.webp";
+import webp13 from "../assets/images/13.webp";
 import webp14 from "../assets/images/14.webp";
 import webp15 from "../assets/images/15.webp";
 import webp16 from "../assets/images/16.webp";
@@ -41,6 +42,7 @@ export {
   webp10,
   webp11,
   webp12,
+  webp13,
   webp14,
   webp15,
   webp16,
