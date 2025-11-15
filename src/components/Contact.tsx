@@ -4,7 +4,7 @@ import ContactLinkItem from "./ContactLinkItem";
 
 const Contact = () => {
   return (
-    <div className="w-full bg-white pt-[30px] md:pt-[50px] font-brand flex flex-col lg:flex-row ">
+    <div className="w-full bg-white pt-[30px] md:pt-[70px] font-brand flex flex-col lg:flex-row hover:shadow-[0px_2px_8px_rgba(0,0,0,0.2)] hover:rounded-md hover:scale-105 transition-all duration-300 ease-in-out">
       <img
         src={arun}
         alt=""
@@ -19,7 +19,7 @@ const Contact = () => {
             Let's have a chat.
           </h2>
         </section>
-        <section className="flex items-center justify-center sm:justify-between flex-wrap gap-4 sm:gap-2 mt-10 md:mt-[50px] lg:mt-[60px] md:ml-[13px]">
+        <section className="max-sm:grid grid-cols-2 max-sm:justify-items-start  sm:flex items-center justify-center sm:justify-between flex-wrap gap-4 sm:gap-2 mt-10 md:mt-[50px] lg:mt-[60px] md:ml-[13px]">
           {contactLinks.map((item) => (
             <ContactLinkItem key={item.id} item={item} />
           ))}
