@@ -33,6 +33,7 @@ import moisturizer from "../assets/images/moisturizer.webp";
 import mealApp from "../assets/images/meal-app.webp";
 import caige from "../assets/images/caige.webp";
 import arun from "../assets/images/arun.webp";
+import project5 from "../assets/images/project-5.png";
 
 export {
   webp1,
@@ -70,4 +71,5 @@ export {
   mealApp,
   caige,
   arun,
+  project5,
 };

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type { ContactLink } from "../data/contactLinks";
 
 interface ContactLinkProps {
@@ -5,14 +6,19 @@ interface ContactLinkProps {
 }
 
 const ContactLinkItem = (props: ContactLinkProps) => {
-  const { image, title, onClick } = props.item;
+  const { image, hoverImage, title, onClick } = props.item;
+
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div
-      className="flex items-center gap-0.5 cursor-pointer justify-center"
+      className="flex items-center gap-0.5 cursor-pointer justify-center hover:scale-110 transition-all duration-200 ease-in-out"
       onClick={onClick}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <img
-        src={image}
+        src={isHovered ? hoverImage : image}
         alt=""
         className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 object-contain"
       />

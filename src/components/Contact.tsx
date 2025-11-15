@@ -4,7 +4,7 @@ import ContactLinkItem from "./ContactLinkItem";
 
 const Contact = () => {
   return (
-    <div className="w-full bg-white pt-[30px] md:pt-[70px] font-brand flex flex-col lg:flex-row hover:shadow-[0px_2px_8px_rgba(0,0,0,0.2)] hover:rounded-md hover:scale-105 transition-all duration-300 ease-in-out">
+    <div className="w-full bg-white pt-[30px] md:pt-[50px] font-brand flex flex-col lg:flex-row hover:shadow-[0px_2px_8px_rgba(0,0,0,0.2)] hover:rounded-md hover:scale-105 transition-all duration-300 ease-in-out">
       <img
         src={arun}
         alt=""

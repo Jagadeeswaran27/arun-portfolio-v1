@@ -1,5 +1,5 @@
 import { miscellaneousData } from "../data/miscelleanous";
-import { miscellaneousBackground } from "../resources/images";
+import { miscellaneousBackground, project5 } from "../resources/images";
 import MiscellaneousCard from "./MiscellaneousCard";
 
 function Miscellaneous() {
@@ -9,6 +9,13 @@ function Miscellaneous() {
         src={miscellaneousBackground}
         alt=""
         className="absolute bottom-4 right-[12%] z-0 max-md:w-[194px] max-md:h- max-md:bottom-[25%]"
+      />
+      <img
+        src={project5}
+        className="absolute right-[4%] top-[45%] max-xl:hidden block"
+        width={40}
+        height={78}
+        alt=""
       />
       <div className="absolute bottom-[70px] left-0  w-[200px] h-2.5 bg-[#B2B2B2]"></div>
       <div className="relative z-10">
