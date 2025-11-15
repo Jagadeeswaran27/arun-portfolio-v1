@@ -5,6 +5,8 @@ import animationData from "./assets/animations/system-solid.json";
 import SocialIcon, { type SocialIconType } from "./components/SocialIcon";
 import { maximize, minimize } from "./resources/icons";
 import { socialIcons } from "./data/socialIcons";
+import Miscellaneous from "./components/Miscellaneous";
+import Contact from "./components/Contact";
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -69,7 +71,7 @@ function App() {
       ))}
       <div
         onClick={toggleFullscreen}
-        className={`group w-14 h-14 fixed ${
+        className={`z-50 group w-14 h-14 fixed ${
           isHovered
             ? isSmallDevice
               ? "bottom-[470px]"
@@ -97,7 +99,7 @@ function App() {
         onMouseLeave={() => setIsHovered(false)}
         onMouseEnter={() => setIsHovered(true)}
         onClick={isSmallDevice ? () => setIsSocialOpened(true) : undefined}
-        className={`social-container group w-14 h-14 fixed bottom-[100px] right-[3%] rounded-full flex items-end cursor-pointer hover:scale-105 hover:h-[350px] ${
+        className={`z-50 social-container group w-14 h-14 fixed bottom-[100px] right-[3%] rounded-full flex items-end cursor-pointer hover:scale-105 hover:h-[350px] ${
           isSocialOpened ? "h-[350px]" : ""
         } transition-all duration-500 ease-in-out origin-bottom`}
         style={{
@@ -126,6 +128,8 @@ function App() {
           } group-hover:opacity-0 `}
         />
       </div>
+      <Miscellaneous />
+      <Contact />
     </div>
   );
 }

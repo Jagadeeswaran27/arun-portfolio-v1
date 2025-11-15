@@ -9,6 +9,7 @@ import mailHover from "../assets/icons/mail-hover.png";
 import linkedInHover from "../assets/icons/linkedin-hover.png";
 import behanceHover from "../assets/icons/behance-hover.png";
 import whatsAppHover from "../assets/icons/whatsapp-hover.png";
+import link from "../assets/icons/link.png";
 
 export {
   phone,
@@ -22,4 +23,5 @@ export {
   linkedInHover,
   behanceHover,
   whatsAppHover,
+  link,
 };

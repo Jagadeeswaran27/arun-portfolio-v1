@@ -28,6 +28,11 @@ import webp28 from "../assets/images/28.webp";
 import webp29 from "../assets/images/29.webp";
 import webp30 from "../assets/images/30.webp";
 import webp31 from "../assets/images/31.webp";
+import miscellaneousBackground from "../assets/images/miscellaneous-background.svg";
+import moisturizer from "../assets/images/moisturizer.webp";
+import mealApp from "../assets/images/meal-app.webp";
+import caige from "../assets/images/caige.webp";
+import arun from "../assets/images/arun.webp";
 
 export {
   webp1,
@@ -60,4 +65,9 @@ export {
   webp29,
   webp30,
   webp31,
+  miscellaneousBackground,
+  moisturizer,
+  mealApp,
+  caige,
+  arun,
 };

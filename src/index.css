@@ -1,16 +1,24 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "iBrandFont"; /* This is your custom name */
+  src: url("./assets/fonts/ibrand.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+}
+
 .root {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: black;
-}
-
-img {
-  width: 80%;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .contact-icon {
@@ -63,4 +71,8 @@ img {
 
 *::-webkit-scrollbar {
   display: none; /* Chrome, Safari, and Opera */
+}
+
+@theme {
+  --font-brand: "iBrandFont", theme("fontFamily.sans");
 }
