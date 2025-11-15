@@ -22,7 +22,7 @@ function Miscellaneous() {
         <h1 className="text-[#2D2D2D] text-[48px] max-md:text-[32px] max-sm:text-[24px] text-center">
           Miscellaneous
         </h1>
-        <div className="flex justify-center items-center gap-[70px] max-md:gap-[100px] flex-wrap mt-20">
+        <div className="flex justify-center items-center gap-[70px] max-md:gap-[100px] flex-wrap md:mt-20 mt-10">
           {miscellaneousData.map((item) => (
             <MiscellaneousCard key={item.id} item={item} />
           ))}
