@@ -75,10 +75,10 @@ function App() {
         style={{
           bottom: isHovered
             ? isSmallDevice
-              ? "550px"
+              ? "530px"
               : "580px"
             : isSmallDevice
-            ? "250px"
+            ? "230px"
             : "280px",
         }}
       >
@@ -95,10 +95,19 @@ function App() {
             boxShadow: "0px 0px 7px 1px #F7F7F740",
           }}
         >
-          <img src={resume} alt="" width={25} height={25} />
+          <img
+            src={resume}
+            alt=""
+            width={25}
+            height={25}
+            style={{
+              width: "25px",
+              height: "25px",
+            }}
+          />
         </div>
         <p
-          className="font-brand text-[#cccccc] font-extralight text-[12px] mt-2 text-center"
+          className="font-brand text-[#cccccc] font-extralight text-[12px] mt-2 text-center max-sm:hidden block"
           style={{ WebkitTextStroke: "0.1px #000000" }}
         >
           Resume
@@ -135,7 +144,7 @@ function App() {
           />
         </div>
         <p
-          className="font-brand text-[#cccccc] font-extralight text-[12px] mt-2 text-center"
+          className="font-brand text-[#cccccc] font-extralight text-[12px] mt-2 text-center max-sm:hidden block"
           style={{ WebkitTextStroke: "0.1px #000000" }}
         >
           {isFullscreen ? "Minimize" : "Maximize"}
@@ -180,7 +189,7 @@ function App() {
           />
         </div>
         <p
-          className="font-brand text-[#cccccc] font-extralight text-[12px] mt-2 text-center"
+          className="font-brand text-[#cccccc] font-extralight text-[12px] mt-2 text-center max-sm:hidden block"
           style={{ WebkitTextStroke: "0.1px #000000" }}
         >
           Contact
