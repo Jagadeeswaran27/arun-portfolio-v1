@@ -28,8 +28,8 @@ const SocialIcon = (props: SocialIconProps) => {
       // Direct Gmail web interface
       const subject = "";
       const body = "";
-      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=arun.n163@gmail.com&su=${encodeURIComponent(
-        subject
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=arun.n1693@gmail.com&su=${encodeURIComponent(
+        subject,
       )}&body=${encodeURIComponent(body)}`;
       window.open(gmailUrl, "_blank");
     } else if (iconType === "behance") {
