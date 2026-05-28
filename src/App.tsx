@@ -6,6 +6,10 @@ import SocialIcon, { type SocialIconType } from "./components/SocialIcon";
 import { maximize, minimize, resume } from "./resources/icons";
 import { socialIcons } from "./data/socialIcons";
 import Miscellaneous from "./components/Miscellaneous";
+import Skills from "./components/Skills";
+import Certifications from "./components/Certifications";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
@@ -196,6 +200,10 @@ function App() {
         </p>
       </div>
       <Miscellaneous />
+      <Skills />
+      <Certifications />
+      <Experience />
+      <Projects />
       <Contact />
     </div>
   );
