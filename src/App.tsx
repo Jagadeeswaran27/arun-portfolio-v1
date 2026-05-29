@@ -69,7 +69,7 @@ function App() {
           className={`hover:scale-[103%] transition-all duration-300 ease-in-out hover:shadow-[0px_2px_8px_rgba(0,0,0,0.2)] hover:rounded-md`}
         />
       ))}
-      {/* Contact Floating */}
+
       <div
         className="fixed z-50 right-[3%] flex flex-col items-center transition-all duration-300 ease-in-out"
         style={{
@@ -78,8 +78,8 @@ function App() {
               ? "530px"
               : "580px"
             : isSmallDevice
-            ? "230px"
-            : "280px",
+              ? "230px"
+              : "280px",
         }}
       >
         <div
@@ -122,8 +122,8 @@ function App() {
               ? "450px"
               : "480px"
             : isSmallDevice
-            ? "150px"
-            : "180px",
+              ? "150px"
+              : "180px",
         }}
       >
         <div
@@ -159,9 +159,8 @@ function App() {
           onMouseLeave={() => setIsHovered(false)}
           onMouseEnter={() => setIsHovered(true)}
           onClick={isSmallDevice ? () => setIsSocialOpened(true) : undefined}
-          className={`z-50 social-container group w-14 h-14 relative rounded-full flex items-end cursor-pointer hover:scale-105 hover:h-[350px] ${
-            isSocialOpened ? "h-[350px]" : ""
-          } transition-all duration-500 ease-in-out origin-bottom`}
+          className={`z-50 social-container group w-14 h-14 relative rounded-full flex items-end cursor-pointer hover:scale-105 hover:h-[350px] ${isSocialOpened ? "h-[350px]" : ""
+            } transition-all duration-500 ease-in-out origin-bottom`}
           style={{
             background: "#cccccc",
             boxShadow: "0px 0px 7px 1px #F7F7F740",
@@ -183,9 +182,8 @@ function App() {
             animationData={animationData}
             loop={true}
             autoplay={true}
-            className={`w-[30px] h-[30px] absolute left-[13px] bottom-[13px] ${
-              isSocialOpened && "opacity-0"
-            } group-hover:opacity-0 `}
+            className={`w-[30px] h-[30px] absolute left-[13px] bottom-[13px] ${isSocialOpened && "opacity-0"
+              } group-hover:opacity-0 `}
           />
         </div>
         <p
